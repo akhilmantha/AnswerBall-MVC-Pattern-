@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		6A435CCE1E9C1DDF005A7987 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A435CCD1E9C1DDF005A7987 /* AppDelegate.swift */; };
-		6A435CD01E9C1DDF005A7987 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A435CCF1E9C1DDF005A7987 /* ViewController.swift */; };
 		6A435CD31E9C1DDF005A7987 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A435CD11E9C1DDF005A7987 /* Main.storyboard */; };
 		6A435CD51E9C1DDF005A7987 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A435CD41E9C1DDF005A7987 /* Assets.xcassets */; };
 		6A435CD81E9C1DDF005A7987 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A435CD61E9C1DDF005A7987 /* LaunchScreen.storyboard */; };
 		6A435CE31E9C1DDF005A7987 /* AnswerBallTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A435CE21E9C1DDF005A7987 /* AnswerBallTests.swift */; };
 		6A435CEE1E9C1DDF005A7987 /* AnswerBallUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A435CED1E9C1DDF005A7987 /* AnswerBallUITests.swift */; };
+		6A435CFC1E9C1E74005A7987 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A435CFB1E9C1E74005A7987 /* MainView.swift */; };
+		6A435CFE1E9C20D8005A7987 /* Shakesound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6A435CFD1E9C20D8005A7987 /* Shakesound.wav */; };
+		6A7EC9811EE6DFEE00DADDE8 /* AnswerBallModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7EC9801EE6DFEE00DADDE8 /* AnswerBallModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,6 @@
 /* Begin PBXFileReference section */
 		6A435CCA1E9C1DDF005A7987 /* AnswerBall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnswerBall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A435CCD1E9C1DDF005A7987 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6A435CCF1E9C1DDF005A7987 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6A435CD21E9C1DDF005A7987 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6A435CD41E9C1DDF005A7987 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6A435CD71E9C1DDF005A7987 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,9 @@
 		6A435CE91E9C1DDF005A7987 /* AnswerBallUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnswerBallUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A435CED1E9C1DDF005A7987 /* AnswerBallUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerBallUITests.swift; sourceTree = "<group>"; };
 		6A435CEF1E9C1DDF005A7987 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A435CFB1E9C1E74005A7987 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		6A435CFD1E9C20D8005A7987 /* Shakesound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Shakesound.wav; sourceTree = "<group>"; };
+		6A7EC9801EE6DFEE00DADDE8 /* AnswerBallModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerBallModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +102,13 @@
 			isa = PBXGroup;
 			children = (
 				6A435CCD1E9C1DDF005A7987 /* AppDelegate.swift */,
-				6A435CCF1E9C1DDF005A7987 /* ViewController.swift */,
 				6A435CD11E9C1DDF005A7987 /* Main.storyboard */,
+				6A435CFB1E9C1E74005A7987 /* MainView.swift */,
+				6A435CFD1E9C20D8005A7987 /* Shakesound.wav */,
 				6A435CD41E9C1DDF005A7987 /* Assets.xcassets */,
 				6A435CD61E9C1DDF005A7987 /* LaunchScreen.storyboard */,
 				6A435CD91E9C1DDF005A7987 /* Info.plist */,
+				6A7EC9801EE6DFEE00DADDE8 /* AnswerBallModel.swift */,
 			);
 			path = AnswerBall;
 			sourceTree = "<group>";
@@ -235,6 +241,7 @@
 				6A435CD81E9C1DDF005A7987 /* LaunchScreen.storyboard in Resources */,
 				6A435CD51E9C1DDF005A7987 /* Assets.xcassets in Resources */,
 				6A435CD31E9C1DDF005A7987 /* Main.storyboard in Resources */,
+				6A435CFE1E9C20D8005A7987 /* Shakesound.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +266,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A435CD01E9C1DDF005A7987 /* ViewController.swift in Sources */,
 				6A435CCE1E9C1DDF005A7987 /* AppDelegate.swift in Sources */,
+				6A7EC9811EE6DFEE00DADDE8 /* AnswerBallModel.swift in Sources */,
+				6A435CFC1E9C1E74005A7987 /* MainView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,6 +411,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AnswerBall/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ASKDN.AnswerBall;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -414,6 +423,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AnswerBall/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ASKDN.AnswerBall;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -485,6 +495,7 @@
 				6A435CF41E9C1DDF005A7987 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6A435CF51E9C1DDF005A7987 /* Build configuration list for PBXNativeTarget "AnswerBallTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +504,7 @@
 				6A435CF71E9C1DDF005A7987 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6A435CF81E9C1DDF005A7987 /* Build configuration list for PBXNativeTarget "AnswerBallUITests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +513,7 @@
 				6A435CFA1E9C1DDF005A7987 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
